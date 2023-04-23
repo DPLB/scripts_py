@@ -1,7 +1,7 @@
 import os 
 import re
 
-directorio = "C:\\Users\\diego\\Desktop\\prueba"
+directorio = "C:\\Users\\diego\\Desktop\\Plnos inst"
 planos_directorio = os.listdir(directorio)
 
 def encontrar_repetidos(lista):
@@ -26,9 +26,9 @@ def encontrar_repetidos(lista):
     return(lista_planos)
 
 def borrar_repetidos(planos, permitidos, ruta):
-        lista_borrar = list(set(planos) - set(permitidos))
+        lista_borrar = [plano for plano in planos if plano not in permitidos]
         for plano_borrar in lista_borrar:
             os.remove(os.path.join(ruta, plano_borrar))
-
+        
 
 borrar_repetidos(planos_directorio, encontrar_repetidos(planos_directorio), directorio)
