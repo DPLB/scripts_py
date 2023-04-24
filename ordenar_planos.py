@@ -5,7 +5,8 @@ import shutil
 directorio_origen = "C:\\Users\\diego\\Desktop\\Nueva carpeta"
 # Diccionario de palabras clave
 palabras_clave = ['DW', 'DS', 'ES', 'EL', 'MA', 'PS', 'CA', 'MD', 'MP', 'SK', 'PR', 'MO', 'DC',
-                   'CS', 'MT', 'IN', 'TE', 'ESP', 'BA', 'CC', 'RR', 'MR', 'PO', 'FC', 'NS']
+                   'CS', 'MT', 'IN', 'TE', 'ESP', 'BA', 'CC', 'RR', 'MR', 'PO', 'FC', 'NS', 'PT'
+                   'DR', 'IT', 'CF']
 
 def crear_carpetas_planos(ubicacion, clave):
 # Recorre todos los archivos en el directorio
